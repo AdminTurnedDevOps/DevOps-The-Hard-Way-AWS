@@ -15,7 +15,7 @@ The solution is to deploy the Uber API for the sign-up page. Currently this solu
 
 ![](images/uber.png)
 
-As a DevOps Engineer, you'll more or less (most likely) not writing the app, but instead, deploying it. That's why you're not writing your own app in this tutorial.
+As a DevOps Engineer, you're more or less (most likely) not writing the app, but instead, deploying it. That's why you're not writing your own app in this tutorial.
 
 *Full Disclosure* - I did have to edit this app a bit from Uber to make it compatible with Python3. You can find the repo here:
 
