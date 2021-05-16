@@ -13,7 +13,7 @@ You're brought in to the company and team to make things more modern so the orga
 ## DevOps Solution
 The solution is to deploy the Uber API.
 
-![screen][images/uber.png]
+![screen]('images/uber.png')
 
 ## Technology Details
 You will be using the following technologies and platforms to set up a DevOps environment.
