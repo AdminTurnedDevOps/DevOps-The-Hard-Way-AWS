@@ -11,6 +11,7 @@ The scenario that you're currently facing is you work in an organization that is
 You're brought in to the company and team to make things more modern so the organization can not only succeed, but stay ahead of their competition. Management now understands the needs and complexity that comes with staying ahead of their competition and they know that they need to. Otherwise, the organization will fall...
 
 ## DevOps Solution
+#TBD
 
 ## Technology Details
 You will be using the following technologies and platforms to set up a DevOps environment.
@@ -26,3 +27,6 @@ You will be using the following technologies and platforms to set up a DevOps en
 9. GitHub
 10. Security best practices (DevSecOps)
 11. Automated testing
+
+## Labs
+TBD
