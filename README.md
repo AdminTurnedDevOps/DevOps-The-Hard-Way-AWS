@@ -38,3 +38,6 @@ You will be using the following technologies and platforms to set up a DevOps en
 
 ## Labs
 TBD
+
+## WIP
+This project started on 5/16/2021 and is not done yet. I'm expecting the full thing to take 1-2 months based on my current time constraints.
