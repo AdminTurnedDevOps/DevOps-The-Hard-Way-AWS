@@ -27,10 +27,10 @@ You will be using the following technologies and platforms to set up a DevOps en
 1. AWS
 2. Python
 3. Terraform
-4. Kubernetes
-5. AWS CDK
-6. CI/CD
-7. Serverless
+4. Docker
+5. Kubernetes
+6. AWS CDK
+7. CI/CD
 8. Monitoring for applications and cloud services
 9. GitHub
 10. Security best practices (DevSecOps)
