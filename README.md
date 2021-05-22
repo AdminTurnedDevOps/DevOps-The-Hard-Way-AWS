@@ -37,8 +37,8 @@ You will be using the following technologies and platforms to set up a DevOps en
 11. Automated testing
 
 ## Labs
-[Prerequisites](https://github.com/AdminTurnedDevOps/DevOps-The-Hard-Way-AWS/blob/main/prerequisites.md)
-[Creating The Docker Image](https://github.com/AdminTurnedDevOps/DevOps-The-Hard-Way-AWS/blob/main/Docker/1-Create-Docker-Image.md)
+1. [Prerequisites](https://github.com/AdminTurnedDevOps/DevOps-The-Hard-Way-AWS/blob/main/prerequisites.md)
+2. [Creating The Docker Image](https://github.com/AdminTurnedDevOps/DevOps-The-Hard-Way-AWS/blob/main/Docker/1-Create-Docker-Image.md)
 
 ## WIP
 This project started on 5/16/2021 and is not done yet. I'm expecting the full thing to take 1-2 months based on my current time constraints.
