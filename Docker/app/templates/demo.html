@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+    <head>
+        <script src="util.js"></script>
+    </head>
+    <body>
+        {% if token %}
+        <h1> Congratulations! you have successfully authenticated and your token is: {{ token }} </h1>
+        {% else %}
+        <h1> Something went wrong :( </h1>
+        {% endif %}
+
+        <h2> Test the following functions of the api! </h2>
+        <button type="button" onclick="action('products')">PRODUCTS!</button>
+        <button type="button" onclick="action('time')">TIME ESTIMATES!</button>
+        <button type="button" onclick="action('price')">PRICE ESTIMATES!</button>
+        <button type="button" onclick="action('history')">HISTORY!</button>
+        <button type="button" onclick="action('me')">ME!</button>
+    </body>
+</html>
