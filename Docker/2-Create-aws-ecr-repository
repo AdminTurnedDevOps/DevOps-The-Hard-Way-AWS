@@ -1,0 +1,9 @@
+# Create AWS ECR Repository
+
+The ECR repo will be where you store the Docker image that you created on your local computer in step 1.
+
+## Create The ECR Repository
+
+## Tag The Docker image
+
+## Push The Docker Image To ECR

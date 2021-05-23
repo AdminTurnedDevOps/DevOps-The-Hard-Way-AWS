@@ -28,6 +28,8 @@ You will be using the following technologies and platforms to set up a DevOps en
 2. Python
 3. Terraform
 4. Docker
+   - Create a Docker image
+   - Store the Docker image in AWS ECR
 5. Kubernetes
 6. AWS CDK
 7. CI/CD
