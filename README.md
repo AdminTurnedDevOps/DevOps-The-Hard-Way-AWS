@@ -41,7 +41,7 @@ You will be using the following technologies and platforms to set up a DevOps en
 
 ## Labs
 1. [Prerequisites](https://github.com/AdminTurnedDevOps/DevOps-The-Hard-Way-AWS/blob/main/prerequisites.md)
-2. Docker
+2. Docker - The purpose of the Docker section is to create a Docker image from the app that the organization is running on-prem (the uber app), containerize it, and store the container inside of a container repository. For the container repo, you'll use AWS ECR.
     - [Create The Docker Image](https://github.com/AdminTurnedDevOps/DevOps-The-Hard-Way-AWS/blob/main/Docker/1-Create-Docker-Image.md)
     - [Create AWS ECR Repository](https://github.com/AdminTurnedDevOps/DevOps-The-Hard-Way-AWS/blob/main/Docker/2-Create-aws-ecr-repository.md)
 
