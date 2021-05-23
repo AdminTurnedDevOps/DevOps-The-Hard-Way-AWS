@@ -13,5 +13,5 @@ The ECR repo will be where you store the Docker image that you created on your l
 `docker tag uber:latest *your_aws_account_id*.dkr.ecr.*your_aws_region*.amazonaws.com/uber-app:latest`
 
 ## Push The Docker Image To ECR
-1. Push the Docker image to ECS
+1. Push the Docker image to ECR
 `docker push *your_aws_account_id*.dkr.ecr.us-east-1.amazonaws.com/uber-app`
