@@ -29,6 +29,7 @@ You will be using the following technologies and platforms to set up a DevOps en
 3. Terraform
 4. Docker
    - Create a Docker image
+   - Create an AWS ECR repository with Terraform
    - Store the Docker image in AWS ECR
 5. Kubernetes
 6. AWS CDK
