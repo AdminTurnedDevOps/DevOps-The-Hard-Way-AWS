@@ -23,3 +23,17 @@ The `-t` is for the tag (the name) of the Docker image and the `.` is telling th
 `docker image ls`
 
 ## Run The Docker Image Locally
+
+Now that the Docker image is created, you can run the contaienr locally just to confirm it'll work and not crash.
+
+1. To run the Docker container, run the following command:
+`docker run -tid uber`
+
+- `t` stands for a TTY console
+- `i` stands for interactive
+- `d` stands for detach so your terminal isn't directly connected to the Docker container
+
+2. To confirm the Docker container is running, run the following command:
+`docker container ls`
+
+You should now see the container running.
