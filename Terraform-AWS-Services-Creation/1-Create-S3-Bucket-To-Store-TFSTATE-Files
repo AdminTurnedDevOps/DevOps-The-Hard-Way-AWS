@@ -1,0 +1,6 @@
+# Create an S3 bucket to store Terraform state files
+
+In this lab you will create an S3 bucket that will be used to store Terraform state files
+
+## Create The Terraform Configurations
+
