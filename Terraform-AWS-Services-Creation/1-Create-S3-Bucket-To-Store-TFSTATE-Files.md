@@ -9,3 +9,7 @@ In this lab you will create an S3 bucket that will be used to store Terraform st
 - Use the `us-east-1` region, but feel free to change that if you'd like
 - Use the `aws_ecr_repository` Terraform resource to create a new respository. 
 
+2. Create the bucket by running the following:
+- `terraform init` - To initialize the working directory and pull down the provider
+- `terraform plan` - To go through a "check" and confirm the configurations are valid
+- `terraform apply - To create the resource
