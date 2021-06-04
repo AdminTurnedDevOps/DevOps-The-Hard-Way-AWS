@@ -25,7 +25,9 @@ https://github.com/AdminTurnedDevOps/Python-Sample-Application
 You will be using the following technologies and platforms to set up a DevOps environment.
 
 1. AWS
+    - AWS will be used to host the application, cloud infrastructure, and any other services we may need to ensure the Uber app is deployed properly.
 2. Python
+    - Python will be used for the Uber app (it is written in Python) and some automation efforts that aren't in Terraform.
 3. Terraform
    - Create an S3 bucket to store Terraform State files
    - Create an AWS ECR repository with Terraform
@@ -37,11 +39,15 @@ You will be using the following technologies and platforms to set up a DevOps en
 7. CI/CD
 8. Monitoring for applications and cloud services
 9. GitHub
+    - To store the application and infrastructure/automation code
 10. Security best practices (DevSecOps)
+    - Implement security best practices for the code you're writing and the cloud services you're building
 11. Automated testing
 
 ## Labs
 1. [Prerequisites](https://github.com/AdminTurnedDevOps/DevOps-The-Hard-Way-AWS/blob/main/prerequisites.md)
+2. AWS:
+    - [Configure credentials to access AWS at a programmatic level]()
 2. Terraform - The purpose of the Terraform section is to create all of the AWS cloud services you'll need from an environment/infrastructure perspective to run the Uber application.
     - [Create S3 Bucket To Store TFSTATE Files](https://github.com/AdminTurnedDevOps/DevOps-The-Hard-Way-AWS/blob/main/Terraform-AWS-Services-Creation/1-Create-S3-Bucket-To-Store-TFSTATE-Files.md)
     - [Create an Elastic Container Registry](https://github.com/AdminTurnedDevOps/DevOps-The-Hard-Way-AWS/blob/main/Terraform-AWS-Services-Creation/2-Create-ECR.md)
