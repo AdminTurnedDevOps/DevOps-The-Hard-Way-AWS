@@ -123,3 +123,18 @@ resource "aws_iam_role_policy_attachment" "attach" {
   role       = aws_iam_role.eks-iam-role.name
   policy_arn = aws_iam_policy.eks-policy.arn
 }
+
+## Create the EKS cluster
+resource "aws_eks_cluster" "devopsthehardway-eks" {
+  name = "devopsthehardway-cluster"
+  role_arn = aws_iam_role.eks-iam-role.arn
+
+  vpc_config {
+    subnet_ids = [var.subnet_id_1, var.subnet_id_2]
+  }
+
+  depends_on = [
+    aws_iam_role.eks-iam-role,
+    aws_iam_policy.eks-policy
+  ]
+}
