@@ -1,5 +1,13 @@
 # Prerequisites
 
+## Prior Knowledge In Tech
+
+DevOps isn't an entry level role by any means if it's being done correctly. There's a lot of knowledge you need prior, including:
+- Some sort of cloud engineering/cloud knowledge experience. Although not all environments are running in the cloud, most of these roles will want it.
+- Scripting/automation/programming experience. You don't have to go out and write the next Twitter, but you should understand the basics of programming.
+- Network, storage, and compute knowledge.
+- Held a prior systems administration, infrastructure engineer, or cloud engineer role.
+
 ## AWS Account
 
 ### Create An AWS Account
