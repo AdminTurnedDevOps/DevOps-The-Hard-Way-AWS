@@ -37,13 +37,17 @@ You will be using the following technologies and platforms to set up a DevOps en
 5. Kubernetes
    - To run the Docker image that's created for the containerized Uber app. Kubernetes, in this case, EKS, will be used to orchestrate the container.
 6. AWS CDK
+   - TBD
 7. CI/CD
+   - TBD
 8. Monitoring for applications and cloud services
+   - TBD
 9. GitHub
     - To store the application and infrastructure/automation code
 10. Security best practices (DevSecOps)
     - Implement security best practices for the code you're writing and the cloud services you're building
 11. Automated testing
+    - TBD
 
 ## Labs
 1. [Prerequisites](https://github.com/AdminTurnedDevOps/DevOps-The-Hard-Way-AWS/blob/main/prerequisites.md)
