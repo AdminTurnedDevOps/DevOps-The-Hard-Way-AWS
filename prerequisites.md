@@ -24,23 +24,23 @@ The AWS CLI is a way for you to interact with all AWS services at a programmatic
 
 To set this up, follow the directions [here](https://docs.aws.amazon.com/polly/latest/dg/setup-aws-cli.html)
 
-# Installations
+## Installations
 You will need to download some software and services for this tutorial.
 
-## Code Editor
+### Code Editor
 
 Because code will be written for *DevOps The Hard Way*, you will need a code editor. For the purposes of this tutorial, you can use [Visual Studio Code](https://code.visualstudio.com/download), which is a free code editor.
 
-## Terraform
+### Terraform
 
 [Terraform Download](https://www.terraform.io/downloads.html)
 
-## Docker
+### Docker
 To build the Docker image, you can use Docker Desktop for Windows or MacOS. 
 
 [Docker Desktop](https://www.docker.com/products/docker-desktop)
 
-## Source Control
+### Source Control
 To store the code that you'll be writing, you can create your very own GitHub account to showcase your project.
 
 [GitHub](https://www.github.com)
