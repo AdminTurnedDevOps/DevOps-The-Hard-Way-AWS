@@ -3,6 +3,7 @@
 In this lab you will create:
 - The appropriate IAM role and policy for EKS.
 - The EKS cluster
+- The Fargate profile for EKS. Fargate makes EKS serverless, so you don't have to worry about managing worker nodes.
 
 ## Create the EKS Terraform Configuration
 
