@@ -6,4 +6,8 @@ Once you authenticate to EKS from your local terminal, a `kubeconfig` gets store
 
 ## Connecting To EKS
 
-1. 
+1. Run the following command to connect to EKS:
+`aws eks --region *your_aws_region* update-kubeconfig --name *your_eks_cluster_name`
+
+2. Once connected, you should be able to run commands like the following to confirm you're connected:
+`kubectl get nodes`
