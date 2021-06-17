@@ -76,6 +76,11 @@ resource "aws_iam_role_policy_attachment" "AmazonEKSFargatePodExecutionRolePolic
   role       = aws_iam_role.eks-fargate.name
 }
 
+resource "aws_iam_role_policy_attachment" "AmazonEKSClusterPolicy-fargate" {
+  policy_arn = "arn:aws:iam::aws:policy/AmazonEKSClusterPolicy"
+  role       = aws_iam_role.eks-fargate.name
+}
+
 resource "aws_eks_fargate_profile" "devopsthehardway-eks-serverless" {
   cluster_name           = aws_eks_cluster.devopsthehardway-eks.name
   fargate_profile_name   = "devopsthehardway-serverless-eks"
