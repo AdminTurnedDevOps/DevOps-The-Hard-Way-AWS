@@ -31,6 +31,7 @@ You will be using the following technologies and platforms to set up a DevOps en
 3. Terraform
    - Create an S3 bucket to store Terraform State files
    - Create an AWS ECR repository with Terraform
+   - Create the EKS cluster
 4. Docker
    - Create a Docker image
    - Store the Docker image in AWS ECR
