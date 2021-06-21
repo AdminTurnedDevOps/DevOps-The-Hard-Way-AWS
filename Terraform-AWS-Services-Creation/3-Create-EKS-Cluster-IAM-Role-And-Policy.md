@@ -6,7 +6,7 @@ In this lab you will create:
 
 ## Create the EKS Terraform Configuration
 
-1. You can find the Terraform configuration for IAM [here](https://github.com/AdminTurnedDevOps/DevOps-The-Hard-Way-AWS/blob/main/Terraform-AWS-Services-Creation/EKS/main.tf). The Terraform configuration files are used to create an EKS cluster and IAM Role/Policy for EKS. 
+1. You can find the Terraform configuration for EKS [here](https://github.com/AdminTurnedDevOps/DevOps-The-Hard-Way-AWS/tree/main/Terraform-AWS-Services-Creation/EKS-Worker-Nodes). The Terraform configuration files are used to create an EKS cluster and IAM Role/Policy for EKS. 
 
 The Terraform `main.tf` will do a few things:
 - Use a Terraform backend to store the `.tfstate` in an S3 bucket
