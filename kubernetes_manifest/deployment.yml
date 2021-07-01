@@ -29,6 +29,5 @@ spec:
       containers:
       - name: uber-ui
         image: 912101370089.dkr.ecr.us-east-1.amazonaws.com/devopsthehardway-ecr:latest
-        imagePullPolicy: Never
         ports:
         - containerPort: 5000
