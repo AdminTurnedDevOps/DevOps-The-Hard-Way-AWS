@@ -62,4 +62,4 @@ You will be using the following technologies and platforms to set up a DevOps en
     - [Create A Kubernetes Manifest](https://github.com/AdminTurnedDevOps/DevOps-The-Hard-Way-AWS/blob/main/kubernetes_manifest/2-Create-Kubernetes-Manifest.md)
 
 ## WIP
-This project started on 5/16/2021 and is not done yet. I'm expecting the full thing to take 1-2 months based on my current time constraints.
+This project started on 5/16/2021 and is not done yet.
