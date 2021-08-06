@@ -44,7 +44,7 @@ You will be using the following technologies and platforms to set up a DevOps en
 8. Monitoring for applications and cloud services
    - TBD
 9. Automated testing
-    - TBD
+    - Testing Terraform code with Checkov
 
 ## Labs
 1. [Prerequisites](https://github.com/AdminTurnedDevOps/DevOps-The-Hard-Way-AWS/blob/main/prerequisites.md)
