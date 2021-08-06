@@ -43,9 +43,7 @@ You will be using the following technologies and platforms to set up a DevOps en
    - TBD
 8. GitHub
     - To store the application and infrastructure/automation code
-9. Security best practices (DevSecOps)
-    - Implement security best practices for the code you're writing and the cloud services you're building
-10. Automated testing
+9. Automated testing
     - TBD
 
 ## Labs
