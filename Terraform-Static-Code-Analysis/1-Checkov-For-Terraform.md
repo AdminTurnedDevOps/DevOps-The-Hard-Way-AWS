@@ -17,4 +17,4 @@ OR
 An example of this would be:
 `checkov --directory DevOps-The-Hard-Way-AWS/Terraform-AWS-Services-Creation/ECR`
 
-You'll then see what tests have passed, what tests have failed, and what you can do to remediate the issues.
+You'll then see what tests have passed, what tests have failed, and what you can do to remediate the issues. You can either view the results on the terminal or from the UI.
