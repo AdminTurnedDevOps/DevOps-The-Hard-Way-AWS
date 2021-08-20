@@ -22,7 +22,7 @@ Now that the secrets are created, it's time to create the pipeline.
 
 1. Under the GitHub repository, click on the **Actions** tab
 2. Under **Get started with Actions**, click the *set up a workflow yourself* button
-3. Inside of that workflow, copy in the contents that you can find [here]()
+3. Inside of the workflow, copy in the contents that you can find [here](https://github.com/AdminTurnedDevOps/DevOps-The-Hard-Way-AWS/blob/main/.github/workflows/main.yml)
 
 The pipeline does a few things:
 - On line 4, you'll see `workflow_dispatch`, which means the pipeline won't automatically run unless you kick it off. You can of course change this to have the pipeline automatically run if you, for example, push code to the `dev` or `main` branch.
