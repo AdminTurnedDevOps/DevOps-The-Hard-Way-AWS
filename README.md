@@ -41,9 +41,7 @@ You will be using the following technologies and platforms to set up a DevOps en
    - To run the Docker image that's created for the containerized Uber app. Kubernetes, in this case, EKS, will be used to orchestrate the container.
 7. CI/CD
    - TBD
-8. Monitoring for applications and cloud services
-   - TBD
-9. Automated testing
+8. Automated testing
     - Testing Terraform code with Checkov
 
 ## Labs
