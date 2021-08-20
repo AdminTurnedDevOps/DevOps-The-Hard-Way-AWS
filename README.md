@@ -64,6 +64,7 @@ You will be using the following technologies and platforms to set up a DevOps en
 7. Automated Testing - The purpose of the Automation Testing section is to ensure that all of the Terraform code is performing as it should be from a policy, security, and static code analysis perspective.
     - [Install And Run Checkov](https://github.com/AdminTurnedDevOps/DevOps-The-Hard-Way-AWS/blob/main/Terraform-Static-Code-Analysis/1-Checkov-For-Terraform.md)
 8. CICD - The purpose of this section is to automatically create an EKS cluster with CICD using GitHub Actions
+    - [Create a GitHub Actions CICD pipeline](https://github.com/AdminTurnedDevOps/DevOps-The-Hard-Way-AWS/blob/main/Terraform-AWS-Services-Creation/4-Run-CICD-For-EKS-Cluster.md)
 
 ## WIP
 This project started on 5/16/2021 and is not done yet.
