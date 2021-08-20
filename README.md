@@ -40,7 +40,7 @@ You will be using the following technologies and platforms to set up a DevOps en
 6. Kubernetes
    - To run the Docker image that's created for the containerized Uber app. Kubernetes, in this case, EKS, will be used to orchestrate the container.
 7. CI/CD
-   - TBD
+   - Use GitHub Actions to create an EKS cluster
 8. Automated testing
     - Testing Terraform code with Checkov
 
@@ -63,6 +63,7 @@ You will be using the following technologies and platforms to set up a DevOps en
     - [Create A Kubernetes Manifest](https://github.com/AdminTurnedDevOps/DevOps-The-Hard-Way-AWS/blob/main/kubernetes_manifest/2-Create-Kubernetes-Manifest.md)
 7. Automated Testing - The purpose of the Automation Testing section is to ensure that all of the Terraform code is performing as it should be from a policy, security, and static code analysis perspective.
     - [Install And Run Checkov](https://github.com/AdminTurnedDevOps/DevOps-The-Hard-Way-AWS/blob/main/Terraform-Static-Code-Analysis/1-Checkov-For-Terraform.md)
+8. CICD - The purpose of this section is to automatically create an EKS cluster with CICD using GitHub Actions
 
 ## WIP
 This project started on 5/16/2021 and is not done yet.
