@@ -8,21 +8,21 @@ DevOps isn't an entry level role by any means if it's being done correctly. Ther
 - Network, storage, and compute knowledge.
 - Held a prior systems administration, infrastructure engineer, or cloud engineer role.
 
-## AWS Account
+## Azure
 
-### Create An AWS Account
+### Create An Azure Account
 
-To follow along with this tutorial, you should have an AWS account. If you don't already have one, you can sign up for a free 12 month trial [here](https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all).
+To follow along with this tutorial, you should have an Azure account. If you don't already have one, you can sign up for a free 12 month trial [here](https://azure.microsoft.com/en-gb/free/search/?&ef_id=Cj0KCQjwtrSLBhCLARIsACh6RmiaUvnIcRuC0BE8HVqtnC09Za6Y_ByYHH8Z4qHmK5-inXXdgZB3d1EaAh8EEALw_wcB:G:s&OCID=AID2200274_SEM_Cj0KCQjwtrSLBhCLARIsACh6RmiaUvnIcRuC0BE8HVqtnC09Za6Y_ByYHH8Z4qHmK5-inXXdgZB3d1EaAh8EEALw_wcB:G:s&gclid=Cj0KCQjwtrSLBhCLARIsACh6RmiaUvnIcRuC0BE8HVqtnC09Za6Y_ByYHH8Z4qHmK5-inXXdgZB3d1EaAh8EEALw_wcB).
 
-You should know that the tutorial for *DevOps The Hard Way* will cost money because some of the services that you use in AWS will not be part of the free tier.
+You should know that the tutorial for *DevOps The Hard Way* will cost money because some of the services that you use in Azure will not be part of the free tier.
 
-To learn more about the AWS Pricing Model so you understand what the cost will be, you can go [here](https://aws.amazon.com/pricing/)
+To learn more about the AWS Pricing Model so you understand what the cost will be, you can go [here](https://azure.microsoft.com/en-gb/pricing/calculator/)
 
-### Use the AWS CLI
+### Use the Azure CLI
 
-The AWS CLI is a way for you to interact with all AWS services at a programmatic level using the terminal.
+The Azure CLI is a way for you to interact with all Azure services at a programmatic level using the terminal.
 
-To set this up, follow the directions [here](https://docs.aws.amazon.com/polly/latest/dg/setup-aws-cli.html)
+To set this up, follow the directions [here](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
 
 ## Installations
 You will need to download some software and services for this tutorial.

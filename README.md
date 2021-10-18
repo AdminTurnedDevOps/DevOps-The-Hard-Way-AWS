@@ -1,9 +1,8 @@
-# DevOps-The-Hard-Way-AWS
+# DevOps-The-Hard-Way-Azure
 
-This tutorial contains a full, real-world solution for setting up an environment that is using DevOps technologies and practices for deploying apps and cloud services/cloud infrastructure to AWS.
+This tutorial contains a full, real-world solution for setting up an environment that is using DevOps technologies and practices for deploying apps and cloud services/cloud infrastructure to Azure.
 
-
-The repository contains free labs, documentation, diagrams, and docs for setting up an entire workflow and DevOps environment from a real-world perspective in AWS.
+The repository contains free labs, documentation, diagrams, and docs for setting up an entire workflow and DevOps environment from a real-world perspective in Azure.
 
 ## DevOps Scenario
 The scenario that you're currently facing is you work in an organization that is very monolithic. There is a ton of bare metal, virtualization, manual deployments of applications, and **old school** practices based on the current teams knowledge of IT.
@@ -24,28 +23,29 @@ https://github.com/AdminTurnedDevOps/Python-Sample-Application
 ## Technology Details
 You will be using the following technologies and platforms to set up a DevOps environment.
 
-1. AWS
-    - AWS will be used to host the application, cloud infrastructure, and any other services we may need to ensure the Uber app is deployed properly.
+1. Azure
+    - Azure will be used to host the application, cloud infrastructure, and any other services we may need to ensure the Uber app is deployed properly.
 2. GitHub
     - To store the application and infrastructure/automation code
 3. Python
     - Python will be used for the Uber app (it is written in Python) and some automation efforts that aren't in Terraform.
 4. Terraform
-   - Create an S3 bucket to store Terraform State files
-   - Create an AWS ECR repository with Terraform
-   - Create an EKS cluster
+   - Create an Azure ACR repository with Terraform
+   - Create an AKS cluster
 5. Docker
    - Create a Docker image
-   - Store the Docker image in AWS ECR
+   - Store the Docker image in Azure ACR
 6. Kubernetes
-   - To run the Docker image that's created for the containerized Uber app. Kubernetes, in this case, EKS, will be used to orchestrate the container.
+   - To run the Docker image that's created for the containerized Uber app. Kubernetes, in this case, AKS, will be used to orchestrate the container.
 7. CI/CD
-   - Use GitHub Actions to create an EKS cluster
+   - Use GitHub Action to create an AKS cluster
 8. Automated testing
     - Testing Terraform code with Checkov
 
 ## Labs
 1. [Prerequisites](https://github.com/AdminTurnedDevOps/DevOps-The-Hard-Way-AWS/blob/main/prerequisites.md)
+2. Create Storage Account for Terraform State file - When running EKS, it requires specific networking. Because all environments will most likely be different, there's a CloudFormation template for this exact purpose.
+   - [Create EKS VPC](https://github.com/AdminTurnedDevOps/DevOps-The-Hard-Way-AWS/tree/main/EKS-VPC-CloudFormation)
 2. VPC - When running EKS, it requires specific networking. Because all environments will most likely be different, there's a CloudFormation template for this exact purpose.
    - [Create EKS VPC](https://github.com/AdminTurnedDevOps/DevOps-The-Hard-Way-AWS/tree/main/EKS-VPC-CloudFormation)
 3. AWS:
