@@ -1,0 +1,2 @@
+name     = "devopsthehardway"
+location = "uksouth"
