@@ -4,7 +4,7 @@ In this lab you will create a Virtual Network (VNET) that will be used to deploy
 
 ## Create the ACR Terraform Configuration
 
-1. You can find the Terraform configuration for Azure Virtual Network [here](https://github.com/AdminTurnedDevOps/DevOps-The-Hard-Way-AWS/tree/main/Terraform-Azure-Services-Creation/VNET). The Terraform configuration files are used to create an Azure Vitual Network. 
+1. You can find the Terraform configuration for Azure Virtual Network [here](https://github.com/thomast1906/DevOps-The-Hard-Way-AWS/tree/main/Terraform-Azure-Services-Creation/VNET). The Terraform configuration files are used to create an Azure Vitual Network. 
 
 The Terraform `main.tf` will do a few things:
 - Use the `azurerm_virtual_network` Terraform resource to create a VNET. 
