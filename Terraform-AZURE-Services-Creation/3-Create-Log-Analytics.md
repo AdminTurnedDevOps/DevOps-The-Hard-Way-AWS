@@ -1,8 +1,8 @@
-# Create an Azure Container Registry Repository
+# Create an Azure Log Analytics Workspace
 
 In this lab you will create a Log Analytics workspace that will be used to view container insights of your AKS Cluster
 
-## Create the ACR Terraform Configuration
+## Create the Log Analytics Workspace Terraform Configuration
 
 1. You can find the Terraform configuration for Log Analytics [here](https://github.com/thomast1906/DevOps-The-Hard-Way-Azure/tree/main/Terraform-Azure-Services-Creation/Log-Analytics). The Terraform configuration files are used to create the Log Analytiocs workspace. 
 

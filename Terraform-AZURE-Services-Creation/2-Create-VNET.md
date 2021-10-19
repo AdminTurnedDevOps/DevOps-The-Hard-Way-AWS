@@ -1,8 +1,8 @@
-# Create an Azure Container Registry Repository
+# Create an Azure VNET
 
 In this lab you will create a Virtual Network (VNET) that will be used to deploy your AKS instance into
 
-## Create the ACR Terraform Configuration
+## Create the Azure VNET Terraform Configuration
 
 1. You can find the Terraform configuration for Azure Virtual Network [here](https://github.com/thomast1906/DevOps-The-Hard-Way-Azure/tree/main/Terraform-Azure-Services-Creation/VNET). The Terraform configuration files are used to create an Azure Vitual Network. 
 
