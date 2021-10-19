@@ -43,7 +43,7 @@ You will be using the following technologies and platforms to set up a DevOps en
     - Testing Terraform code with Checkov
 
 ## Labs
-1. [Prerequisites](https://github.com/thomast1906/DevOps-The-Hard-Way-AWS/blob/main/prerequisites.md)
+1. [Prerequisites](https://github.com/thomast1906/DevOps-The-Hard-Way-Azure/blob/main/prerequisites.md)
 2. [Create Storage Account for Terraform State file](https://github.com/thomast1906/DevOps-The-Hard-Way-Azure/blob/main/Azure/1-Configure-Terraform-Remote-Storage.md) - When deploying Terraform there is a requirement that it must store a state file; this file is used by Terraform to map Azure Resources to your configuration that you want to deploy, keeps track of meta data and can also assist with improving performance for larger Azure Resource deployments.
 3. [Create Azure AD Group for AKS Admins](https://github.com/thomast1906/DevOps-The-Hard-Way-Azure/blob/main/Azure/2-Create-Azure-AD-Group-AKS-Admins.md)
 
@@ -56,14 +56,14 @@ In this scenario, the Terraform State file will be stored in remote state locati
     - [Create Log Analytics](https://github.com/thomast1906/DevOps-The-Hard-Way-Azure/blob/main/Terraform-AZURE-Services-Creation/3-Create-Log-Analytics.md)
     - [Create AKS Cluster with relevant IAM roles](https://github.com/thomast1906/DevOps-The-Hard-Way-Azure/blob/main/Terraform-AZURE-Services-Creation/4-Create-AKS-Cluster-IAM-Roles.md)
 
-3. Docker - The purpose of the Docker section is to create a Docker image from the app that the organization is running on-prem (the uber app), containerize it, and store the container inside of a container repository. For the container repo, you'll use AWS ECR.
+3. Docker - The purpose of the Docker section is to create a Docker image from the app that the organization is running on-prem (the uber app), containerize it, and store the container inside of a container repository. For the container repo, you'll use Azure ECR.
     - [Create The Docker Image](https://github.com/thomast1906/DevOps-The-Hard-Way-Azure/blob/main/Docker/1-Create-Docker-Image.md)
-    - [Log Into AWS ECR Repository](https://github.com/thomast1906/DevOps-The-Hard-Way-Azure/blob/main/Docker/Push%20Image%20To%20ACR.md)
+    - [Log Into Azure ECR Repository](https://github.com/thomast1906/DevOps-The-Hard-Way-Azure/blob/main/Docker/Push%20Image%20To%20ACR.md)
 4. Kubernetes - The purpose of the Kubernetes section is to connect to AKS locally and to write the Kubernetes manifest to deploy the Python Uber app.
     - [Connect To ACR From The Terminal](https://github.com/thomast1906/DevOps-The-Hard-Way-Azure/blob/main/kubernetes_manifest/1-Connect-To-ACR.md)
-    - [Create A Kubernetes Manifest](https://github.com/thomast1906/DevOps-The-Hard-Way-AWS/blob/main/kubernetes_manifest/2-Create-Kubernetes-Manifest.md)
+    - [Create A Kubernetes Manifest](https://github.com/thomast1906/DevOps-The-Hard-Way-Azure/blob/main/kubernetes_manifest/2-Create-Kubernetes-Manifest.md)
     - [Deploy Uber App into Kubernetes](https://github.com/thomast1906/DevOps-The-Hard-Way-Azure/blob/main/kubernetes_manifest/3-Deploy-Uber-App.md)
 5. Automated Testing - The purpose of the Automation Testing section is to ensure that all of the Terraform code is performing as it should be from a policy, security, and static code analysis perspective.
-    - [Install And Run Checkov](https://github.com/thomast1906/DevOps-The-Hard-Way-AWS/blob/main/Terraform-Static-Code-Analysis/1-Checkov-For-Terraform.md)
+    - [Install And Run Checkov](https://github.com/thomast1906/DevOps-The-Hard-Way-Azure/blob/main/Terraform-Static-Code-Analysis/1-Checkov-For-Terraform.md)
 6. CICD - The purpose of this section is to automatically create an AKS cluster with CICD using GitHub Actions
     - [Create a GitHub Actions CICD pipeline](https://github.com/thomast1906/DevOps-The-Hard-Way-Azure/blob/main/Terraform-AZURE-Services-Creation/5-Run-CICD-For-AKS-Cluster.md)

@@ -15,6 +15,6 @@ OR
 4. Run a scan to the Terraform code. For this process, you can scan all of the Terraform code in the `Terraform-AZURE-Services-Creation` directory.
 
 An example of this would be:
-`checkov --directory DevOps-The-Hard-Way-AWS/Terraform-AZURE-Services-Creation/ACR`
+`checkov --directory DevOps-The-Hard-Way-Azure/Terraform-AZURE-Services-Creation/ACR`
 
 You'll then see what tests have passed, what tests have failed, and what you can do to remediate the issues. You can either view the results on the terminal or from the UI.

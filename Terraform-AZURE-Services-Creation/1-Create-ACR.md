@@ -4,7 +4,7 @@ In this lab you will create a repository to store the Docker image that you crea
 
 ## Create the ACR Terraform Configuration
 
-1. You can find the Terraform configuration for Azure Container Registry (ACR) [here](https://github.com/thomast1906/DevOps-The-Hard-Way-AWS/tree/main/Terraform-Azure-Services-Creation/ACR). The Terraform configuration files are used to create a repository in Azure Container Registry (ACR). 
+1. You can find the Terraform configuration for Azure Container Registry (ACR) [here](https://github.com/thomast1906/DevOps-The-Hard-Way-Azure/tree/main/Terraform-Azure-Services-Creation/ACR). The Terraform configuration files are used to create a repository in Azure Container Registry (ACR). 
 
 The Terraform `main.tf` will do a few things:
 - Use a Terraform backend to store the `.tfstate` in an Azure Storage Account

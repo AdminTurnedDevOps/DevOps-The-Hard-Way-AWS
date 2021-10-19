@@ -4,7 +4,7 @@ In this lab you will create a Log Analytics workspace that will be used to view 
 
 ## Create the ACR Terraform Configuration
 
-1. You can find the Terraform configuration for Log Analytics [here](https://github.com/thomast1906/DevOps-The-Hard-Way-AWS/tree/main/Terraform-Azure-Services-Creation/Log-Analytics). The Terraform configuration files are used to create the Log Analytiocs workspace. 
+1. You can find the Terraform configuration for Log Analytics [here](https://github.com/thomast1906/DevOps-The-Hard-Way-Azure/tree/main/Terraform-Azure-Services-Creation/Log-Analytics). The Terraform configuration files are used to create the Log Analytiocs workspace. 
 
 The Terraform `main.tf` will do a few things:
 - Use the `azurerm_log_analytics_workspace` Terraform resource to create a Log Analytics workspace. 

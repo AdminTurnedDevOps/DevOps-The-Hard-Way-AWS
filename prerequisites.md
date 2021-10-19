@@ -16,7 +16,7 @@ To follow along with this tutorial, you should have an Azure account. If you don
 
 You should know that the tutorial for *DevOps The Hard Way* will cost money because some of the services that you use in Azure will not be part of the free tier.
 
-To learn more about the AWS Pricing Model so you understand what the cost will be, you can go [here](https://azure.microsoft.com/en-gb/pricing/calculator/)
+To learn more about the Azure Pricing Model so you understand what the cost will be, you can go [here](https://azure.microsoft.com/en-gb/pricing/calculator/)
 
 ### Use the Azure CLI
 
