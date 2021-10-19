@@ -18,7 +18,7 @@ As a DevOps Engineer, you're more or less (most likely) not writing the app, but
 
 *Full Disclosure* - I did have to edit this app a bit from Uber to make it compatible with Python3. You can find the repo here:
 
-https://github.com/thomast1906/Python-Sample-Application
+https://github.com/AdminTurnedDevOps/Python-Sample-Application
 
 ## Technology Details
 You will be using the following technologies and platforms to set up a DevOps environment.
