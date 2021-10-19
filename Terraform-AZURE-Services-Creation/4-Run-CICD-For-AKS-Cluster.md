@@ -31,17 +31,17 @@ You'll be adding 4 screts into the GitHub repository. These four secrets will al
 Now that the secrets are created, it's time to create the pipeline.
 
 1. Under the GitHub repository, click on the **Actions** tab
-2. Under **Get started with Actions**, click the *set up a workflow yourself* button
-3. Inside of the workflow, copy in the contents that you can find [here](https://github.com/AdminTurnedDevOps/DevOps-The-Hard-Way-AWS/blob/main/.github/workflows/main.yml)
+2. You will see a workflow already called `CI`
+3. Select `CI` workflow and then select `Run workflow` `from` main branch
 
 The pipeline does a few things:
 - On line 4, you'll see `workflow_dispatch`, which means the pipeline won't automatically run unless you kick it off. You can of course change this to have the pipeline automatically run if you, for example, push code to the `dev` or `main` branch.
 - The code is checked-out
-- Authentication occurs to AWS
+- Authentication occurs to Azure
 - Terraform is set up
-- Terraform init occurs
 - Terraform format occurs
+- Terraform init occurs
 - Terraform plan occurs
 - Terraform apply occurs
 
-4. Run the pipeline and watch as the pipeline automatically creates the EKS cluster
+1. Run the pipeline and watch as the pipeline automatically creates the AKS cluster

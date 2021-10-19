@@ -57,5 +57,5 @@ jobs:
       uses: hashicorp/terraform-github-actions@master
       with:
         tf_actions_version: 1.0.1
-        tf_actions_subcommand: 'applya'
+        tf_actions_subcommand: 'apply'
         tf_actions_working_dir: "./Terraform-AZURE-Services-Creation/AKS"
