@@ -9,6 +9,7 @@ Now it's time to set up the Kubernetes manifest, which will take the application
 The Kubernetes manifest will consist of two components:
 - The deployment
 - The service
+- The Application Gateway Ingress
 
 The deployment is what gets the application running in Kubernetes
 
