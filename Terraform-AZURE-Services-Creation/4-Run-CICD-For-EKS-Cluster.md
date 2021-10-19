@@ -25,7 +25,6 @@ You'll be adding 4 screts into the GitHub repository. These four secrets will al
 `AZURE_AD_TENANT_ID` – The Azure AD tenant ID to where the service principal was created
 `AZURE_SUBSCRIPTION_ID` – Subscription ID of where you want to deploy the Terraform
 
-
 3. Save the secrets.
 
 ## Pipeline

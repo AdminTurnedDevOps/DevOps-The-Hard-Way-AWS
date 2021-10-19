@@ -4,37 +4,58 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  terraform:
+    name: 'Terraform'
+    env:
+      ARM_CLIENT_ID: ${{ secrets.AZURE_AD_CLIENT_ID }}
+      ARM_CLIENT_SECRET: ${{ secrets.AZURE_AD_CLIENT_SECRET }}
+      ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+      ARM_TENANT_ID: ${{ secrets.AZURE_AD_TENANT_ID }}
     runs-on: ubuntu-latest
+    environment: production
+ 
+    # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
+    defaults:
+      run:
+        shell: bash
+ 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
-      - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v1
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-west-1
-
-      - name: Setup Terraform
-        uses: hashicorp/setup-terraform@v1
-
-      - name: Terraform Init
-        working-directory: Terraform-AWS-Services/elasticsearch/elasticsearch_configuration/
-        run: |
-          terraform init \
-            -backend-config "bucket=terraform-states-monitoring-platform" \
-            -backend-config "key=elasticsearch-terraform.tfstate"
-          terraform workspace new dev || terraform workspace select dev
-      - name: Terraform Format
-        working-directory: Terraform-AWS-Services/elasticsearch/elasticsearch_configuration/
-        run: terraform fmt
-
-      - name: Terraform Plan
-        working-directory: Terraform-AWS-Services/elasticsearch/elasticsearch_configuration/
-        run: terraform plan -var="environment=development" -var="elasticsearch_password=${{ secrets.ELASTICSEARCH_PASSWORD }}"
-
-      - name: Terraform Apply
-        working-directory: Terraform-AWS-Services/elasticsearch/elasticsearch_configuration/
-        run: terraform apply -var="environment=development" -var="elasticsearch_password=${{ secrets.ELASTICSEARCH_PASSWORD }}" -auto-approve
+    # Checkout the repository to the GitHub Actions runner
+    - name: Checkout
+      uses: actions/checkout@v2
+ 
+    - name: 'Terraform Format'
+      uses: hashicorp/terraform-github-actions@master
+      with:
+        tf_actions_version: 1.0.1
+        tf_actions_subcommand: 'fmt'
+        tf_actions_working_dir: "./Terraform-AZURE-Services-Creation/AKS"
+         
+    - name: 'Terraform Init'
+      uses: hashicorp/terraform-github-actions@master
+      with:
+        tf_actions_version: 1.0.1
+        tf_actions_subcommand: 'init'
+        tf_actions_working_dir: "./Terraform-AZURE-Services-Creation/AKS"
+ 
+    - name: 'Terraform Validate'
+      uses: hashicorp/terraform-github-actions@master
+      with:
+        tf_actions_version: 1.0.1
+        tf_actions_subcommand: 'validate'
+        tf_actions_working_dir: "./Terraform-AZURE-Services-Creation/AKS"
+         
+    - name: 'Terraform Plan'
+      uses: hashicorp/terraform-github-actions@master
+      with:
+        tf_actions_version: 1.0.1
+        tf_actions_subcommand: 'plan'
+        tf_actions_working_dir: "./Terraform-AZURE-Services-Creation/AKS"
+ 
+    - name: Terraform Apply
+      if: github.ref == 'refs/heads/main'
+      uses: hashicorp/terraform-github-actions@master
+      with:
+        tf_actions_version: 1.0.1
+        tf_actions_subcommand: 'applya'
+        tf_actions_working_dir: "./Terraform-AZURE-Services-Creation/AKS"
