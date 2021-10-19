@@ -1,12 +1,12 @@
-# Create An EKS Cluster and IAM Role/Policy
+# Create An AKS Cluster and IAM Role/Policy
 
 In this lab you will create:
-- The appropriate IAM role and policy for EKS.
-- The EKS cluster
+- The appropriate IAM role and policy for AKS.
+- The AKS cluster
 
-## Create the EKS Terraform Configuration
+## Create the AKS Terraform Configuration
 
-1. You can find the Terraform configuration for EKS [here](https://github.com/AdminTurnedDevOps/DevOps-The-Hard-Way-AWS/tree/main/Terraform-AWS-Services-Creation/EKS-With-Worker-Nodes). The Terraform configuration files are used to create an EKS cluster and IAM Role/Policy for EKS. 
+1. You can find the Terraform configuration for AKS [here](https://github.com/thomast1906/DevOps-The-Hard-Way-AWS/tree/main/Terraform-AWS-Services-Creation/AKS-With-Worker-Nodes). The Terraform configuration files are used to create an AKS cluster and IAM Role/Policy for AKS. 
 
 The Terraform `main.tf` will do a few things:
 - Use a Terraform backend to store the `.tfstate` in an S3 bucket

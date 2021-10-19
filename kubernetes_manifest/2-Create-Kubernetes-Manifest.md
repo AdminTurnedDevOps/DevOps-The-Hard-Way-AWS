@@ -2,7 +2,7 @@
 
 At this point you have successfully created a Docker image from the Uber app and stored it in ECR.
 
-Now it's time to set up the Kubernetes manifest, which will take the application and deploy it to EKS.
+Now it's time to set up the Kubernetes manifest, which will take the application and deploy it to AKS.
 
 ## The Manifest
 

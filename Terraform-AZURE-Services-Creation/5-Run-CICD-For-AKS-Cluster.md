@@ -1,6 +1,6 @@
-# Create EKS Cluster With CICD
+# Create AKS Cluster With CICD
 
-In this lab, you'll learn how to create an EKS cluster using GitHub Actions. The code can be found [here](https://github.com/thomast1906/DevOps-The-Hard-Way-Azure/tree/main/Terraform-AZURE-Services-Creation/AKS)
+In this lab, you'll learn how to create an AKS cluster using GitHub Actions. The code can be found [here](https://github.com/thomast1906/DevOps-The-Hard-Way-Azure/tree/main/Terraform-AZURE-Services-Creation/AKS)
 
 
 ## Secrets
