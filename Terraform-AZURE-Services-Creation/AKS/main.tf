@@ -116,7 +116,7 @@ data "azurerm_container_registry" "example" {
 resource "azurerm_role_assignment" "acr_pull" {
   principal_id         = azurerm_kubernetes_cluster.k8s.kubelet_identity[0].object_id
   scope                = data.azurerm_resource_group.resource_group.id
-  role_definition_name = "ACR Pull"
+  role_definition_name = "acrpull"
   depends_on = [
     azurerm_kubernetes_cluster.k8s
   ]

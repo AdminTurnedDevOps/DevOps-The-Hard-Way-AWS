@@ -1,19 +1,30 @@
 # Create EKS Cluster With CICD
 
-In this lab, you'll learn how to create an EKS cluster using GitHub Actions. The code can be found [here](https://github.com/AdminTurnedDevOps/DevOps-The-Hard-Way-AWS/tree/main/Terraform-AWS-Services-Creation/EKS-With-Worker-Nodes)
+In this lab, you'll learn how to create an EKS cluster using GitHub Actions. The code can be found [here](https://github.com/thomast1906/DevOps-The-Hard-Way-Azure/tree/main/Terraform-AZURE-Services-Creation/AKS)
 
 
 ## Secrets
-Prior to running the pipeline, you'll need to set up authentication from GitHub to AWS. To do that, you'll set up secrets.
+Prior to running the pipeline, you'll need to set up authentication from GitHub to Azure. To do that, you'll setup an Azure Service Principal.
 
-You'll need an AWS Access Key ID and an AWS Secret Access Key as those are the two secrets you'll be adding into the GitHub repository. These two secrets will allow you to connect to AWS from GitHub Actions.
+Using the below AZ Cli(Note Down Secret): 
+
+`az ad sp create-for-rbac --name devopsthehardway`
+
+Alternatively - [this can be done via Azure Portal](https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal)
+
+You'll need both the clientID of the service principal and secret that was created. 
+
+Please Note: The Service Principal needs IAM permission to the subscription/resource group to where the Azure resources are deployed. In this example, I gave **contributor** access to the **subscription**.
+
+You'll be adding 4 screts into the GitHub repository. These four secrets will allow you to connect to Azure from GitHub Actions.
 
 1. In the code repository, go to Settings --> Secrets
 2. Add in two secrets:
-`AWS_ACCESS_KEY_ID`
-`AWS_SECRET_ACCESS_KEY`
+`AZURE_AD_CLIENT_ID` – Will be the service principal ID from above
+`AZURE_AD_CLIENT_SECRET` – The secret that was created as part of the Azure Service Principal
+`AZURE_AD_TENANT_ID` – The Azure AD tenant ID to where the service principal was created
+`AZURE_SUBSCRIPTION_ID` – Subscription ID of where you want to deploy the Terraform
 
-The values should come from an AWS Access Key and Secret Key. The access key/secret key must be part of a user that has policies attached for the resources being created in AWS.
 
 3. Save the secrets.
 
