@@ -6,7 +6,7 @@ In this lab you will create:
 
 ## Create the AKS Terraform Configuration
 
-1. You can find the Terraform configuration for AKS [here](https://github.com/thomast1906/DevOps-The-Hard-Way-Azure/tree/main/Terraform-Azure-Services-Creation/AKS-With-Worker-Nodes). The Terraform configuration files are used to create an AKS cluster and IAM Role/Policy for AKS. 
+1. You can find the Terraform configuration for AKS [here](https://github.com/thomast1906/DevOps-The-Hard-Way-Azure/tree/main/Terraform-AZURE-Services-Creation/AKS). The Terraform configuration files are used to create an AKS cluster and IAM Role/Policy for AKS. 
 
 The Terraform `main.tf` will do a few things:
 - Use the `azurerm_kubernetes_cluster` Terraform resource to AKS Cluster 
