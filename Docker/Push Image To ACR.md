@@ -1,4 +1,4 @@
-# Push Image To ECR
+# Push Image To ACR
 
 The ECR repo will be where you store the Docker image that you created on your local computer in step 1.
 
