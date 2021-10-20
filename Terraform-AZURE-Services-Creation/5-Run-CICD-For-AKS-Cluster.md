@@ -19,11 +19,12 @@ Please Note: The Service Principal needs IAM permission to the subscription/reso
 You'll be adding 4 screts into the GitHub repository. These four secrets will allow you to connect to Azure from GitHub Actions.
 
 1. In the code repository, go to Settings --> Secrets
-2. Add in two secrets:
-`AZURE_AD_CLIENT_ID` – Will be the service principal ID from above
-`AZURE_AD_CLIENT_SECRET` – The secret that was created as part of the Azure Service Principal
-`AZURE_AD_TENANT_ID` – The Azure AD tenant ID to where the service principal was created
-`AZURE_SUBSCRIPTION_ID` – Subscription ID of where you want to deploy the Terraform
+2. Add in four secrets:
+
+- `AZURE_AD_CLIENT_ID` – Will be the service principal ID from above
+- `AZURE_AD_CLIENT_SECRET` – The secret that was created as part of the Azure Service Principal
+- `AZURE_AD_TENANT_ID` – The Azure AD tenant ID to where the service principal was created
+- `AZURE_SUBSCRIPTION_ID` – Subscription ID of where you want to deploy the Terraform
 
 3. Save the secrets.
 
