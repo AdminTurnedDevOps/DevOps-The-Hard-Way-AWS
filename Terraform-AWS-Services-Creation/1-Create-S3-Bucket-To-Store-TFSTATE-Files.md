@@ -14,4 +14,4 @@ The Terraform `main.tf` will do a few things:
 2. Create the bucket by running the following:
 - `terraform init` - To initialize the working directory and pull down the provider
 - `terraform plan` - To go through a "check" and confirm the configurations are valid
-- `terraform apply - To create the resource
+- `terraform apply` - To create the resource
