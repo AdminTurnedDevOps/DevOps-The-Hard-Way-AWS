@@ -10,16 +10,16 @@ The purpse of this lab is to configure IAM credentials on your local computer so
 
 ## Install The AWS CLI
 
-# Windows
+### Windows
 1. msiexec.exe /i https://awscli.amazonaws.com/AWSCLIV2.msi
 2. aws --version
-# Linux 
+### Linux 
 1. curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 2. unzip awscliv2.zip
 3. sudo ./aws/install
 4. aws --version (to confirm installation)
 
-# macOS
+### macOS
 1. curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
 2. sudo installer -pkg AWSCLIV2.pkg -target /
 3. aws --version
@@ -29,7 +29,7 @@ The purpse of this lab is to configure IAM credentials on your local computer so
 
 1. aws configure
 
-# Here are examples of what it would look like when you configure your AWS account. 
+## Here are examples of what it would look like when you configure your AWS account. 
 AWS Access Key ID [None]: AKIAIOSFODNN7EXAMPLE 
 AWS Secret Access Key [None]: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 Default region name [None]: us-west-2
