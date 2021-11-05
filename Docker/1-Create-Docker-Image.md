@@ -27,7 +27,7 @@ The `-t` is for the tag (the name) of the Docker image and the `.` is telling th
 Now that the Docker image is created, you can run the container locally just to confirm it'll work and not crash.
 
 1. To run the Docker container, run the following command:
-`docker run -tid uber`
+`docker run -tid uberapp`
 
 - `t` stands for a TTY console
 - `i` stands for interactive
