@@ -10,8 +10,8 @@ The ECR repo will be where you store the Docker image that you created on your l
 
 ## Tag The Docker image
 1. Tag the Docker image
-`docker tag uber *your_aws_account_id*.dkr.ecr.*your_aws_region*.amazonaws.com`
+`docker tag uber *your_aws_account_id*.dkr.ecr.*your_aws_region*.amazonaws.com/*repo_name*`
 
 ## Push The Docker Image To ECR
 1. Push the Docker image to ECR
-`docker push *your_aws_account_id*.dkr.ecr.us-east-1.amazonaws.com/*repo_name*`
+`docker push *your_aws_account_id*.dkr.ecr.*your_aws_region*.amazonaws.com/*repo_name*`
