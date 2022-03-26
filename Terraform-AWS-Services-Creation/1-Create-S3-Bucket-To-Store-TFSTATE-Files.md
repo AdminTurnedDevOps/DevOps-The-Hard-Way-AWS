@@ -12,6 +12,7 @@ The Terraform `main.tf` will do a few things:
 - Utilize AES256 encryption 
 
 2. Create the bucket by running the following:
+- Adding a random number to the end of the bucket name in the main.tf file (as S3 bucket names must be globally unique)
 - `terraform init` - To initialize the working directory and pull down the provider
 - `terraform plan` - To go through a "check" and confirm the configurations are valid
 - `terraform apply - To create the resource
