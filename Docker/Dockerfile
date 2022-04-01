@@ -7,7 +7,7 @@ COPY app /build
 
 COPY app/requirements.txt /build
 
-RUN pip install -r requirements.txt
+RUN pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org -r requirements.txt
 
 EXPOSE 5000
 

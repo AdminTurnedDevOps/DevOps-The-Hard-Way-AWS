@@ -14,7 +14,7 @@ Alternatively - [this can be done via Azure Portal](https://docs.microsoft.com/e
 
 You'll need both the clientID of the service principal and secret that was created. 
 
-Please Note: The Service Principal needs IAM permission to the subscription/resource group to where the Azure resources are deployed. In this example, I gave **contributor** access to the **subscription**.
+Please Note: The Service Principal needs IAM permission to the subscription/resource group to where the Azure resources are deployed. In this example, I gave **contributor** access to the **subscription**. See examples on how to [assign an Azure Role here](https://docs.microsoft.com/en-us/azure/role-based-access-control/role-assignments-steps)
 
 You'll be adding 4 screts into the GitHub repository. These four secrets will allow you to connect to Azure from GitHub Actions.
 

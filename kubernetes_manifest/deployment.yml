@@ -32,7 +32,7 @@ spec:
         ports:
         - containerPort: 5000
 ---
-apiVersion: extensions/v1beta1
+apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: uber-ui
@@ -43,6 +43,9 @@ spec:
     - http:
         paths:
           - path: /
+            pathType: Prefix
             backend:
-              serviceName: uber-ui
-              servicePort: 80
+              service:
+                name: uber-ui
+                port:
+                  number: 80
