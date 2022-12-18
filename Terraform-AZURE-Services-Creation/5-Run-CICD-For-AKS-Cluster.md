@@ -6,7 +6,7 @@ In this lab, you'll learn how to create an AKS cluster using GitHub Actions. The
 ## Secrets
 Prior to running the pipeline, you'll need to set up authentication from GitHub to Azure. To do that, you'll setup an Azure Service Principal.
 
-Using the below AZ Cli(Note Down Secret): 
+Using the below Az CLI (Note Down Secret): 
 
 `az ad sp create-for-rbac --name devopsthehardway`
 
@@ -45,4 +45,4 @@ The pipeline does a few things:
 - Terraform plan occurs
 - Terraform apply occurs
 
-1. Run the pipeline and watch as the pipeline automatically creates the AKS cluster
+4. Run the pipeline and watch as the pipeline automatically creates the AKS cluster
