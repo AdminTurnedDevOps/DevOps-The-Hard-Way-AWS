@@ -11,3 +11,4 @@ The purpse of this lab is to configure IAM credentials on your local computer so
 ## Install The AWS CLI
 
 ## Configure The AWS CLI
+Used this resource: https://medium.com/codex/install-aws-command-line-interface-cli-on-ubuntu-491383f93813
