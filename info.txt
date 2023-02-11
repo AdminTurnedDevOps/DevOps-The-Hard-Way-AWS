@@ -98,3 +98,5 @@ Here is another useful reference
 
 How to adopt a Git branching strategy
 coding school for software developers
+
+this thing no easy
