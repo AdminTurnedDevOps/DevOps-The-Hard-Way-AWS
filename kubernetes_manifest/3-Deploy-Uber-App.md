@@ -11,3 +11,4 @@ You'll see an output that specifies the service and deployment was created.
 3. Run the following command to confirm that the deployment was successful:
 `kubectl get deployments`
 
+kubectl get deployments with id also works
