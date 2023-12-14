@@ -13,7 +13,9 @@ The Terraform `main.tf` will do a few things:
 - Use the `azurerm_role_assignment` Terraform resource to create the two neccessary role assignments 
 - Use the `uksouth` region, but feel free to change that if you'd like
 
-2. Create the bucket by running the following:
+2. In line 8 of `terraform.tfvars` replace the actual Azure AD Group ID you noted down [earlier](https://github.com/thomast1906/DevOps-The-Hard-Way-Azure/blob/main/Azure/2-Create-Azure-AD-Group-AKS-Admins.md)
+
+3. Create the bucket by running the following:
 - `terraform init` - To initialize the working directory and pull down the provider
 - `terraform plan` - To go through a "check" and confirm the configurations are valid
 - `terraform apply` - To create the resource

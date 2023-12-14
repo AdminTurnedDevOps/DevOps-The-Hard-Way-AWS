@@ -58,9 +58,9 @@ In this scenario, the Terraform State file will be stored in remote state locati
 
 3. Docker - The purpose of the Docker section is to create a Docker image from the app that the organization is running on-prem (the uber app), containerize it, and store the container inside of a container repository. For the container repo, you'll use Azure ECR.
     - [Create The Docker Image](https://github.com/thomast1906/DevOps-The-Hard-Way-Azure/blob/main/Docker/1-Create-Docker-Image.md)
-    - [Log Into Azure ACR Repository](https://github.com/thomast1906/DevOps-The-Hard-Way-Azure/blob/main/Docker/Push%20Image%20To%20ACR.md)
+    - [Log Into Azure ACR Repository and Push the Docker Image](https://github.com/thomast1906/DevOps-The-Hard-Way-Azure/blob/main/Docker/Push%20Image%20To%20ACR.md)
 4. Kubernetes - The purpose of the Kubernetes section is to connect to AKS locally and to write the Kubernetes manifest to deploy the Python Uber app.
-    - [Connect To ACR From The Terminal](https://github.com/thomast1906/DevOps-The-Hard-Way-Azure/blob/main/kubernetes_manifest/1-Connect-To-ACR.md)
+    - [Connect To AKS From The Terminal](https://github.com/thomast1906/DevOps-The-Hard-Way-Azure/blob/main/kubernetes_manifest/1-Connect-To-ACR.md)
     - [Create A Kubernetes Manifest](https://github.com/thomast1906/DevOps-The-Hard-Way-Azure/blob/main/kubernetes_manifest/2-Create-Kubernetes-Manifest.md)
     - [Deploy Uber App into Kubernetes](https://github.com/thomast1906/DevOps-The-Hard-Way-Azure/blob/main/kubernetes_manifest/3-Deploy-Uber-App.md)
 5. Automated Testing - The purpose of the Automation Testing section is to ensure that all of the Terraform code is performing as it should be from a policy, security, and static code analysis perspective.
