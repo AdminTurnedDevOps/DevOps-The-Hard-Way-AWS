@@ -17,6 +17,11 @@ In this lab you will create a Docker image to containerize the Uber app.
 4. To create the Docker image, you'll run the following command:
 `docker build -t uberapp .`
 
+Please note, you want to run the below docker command instead, if the above does not work:
+`docker build --platform=linux/amd64 -t uberapp .` 
+
+This command is similar to the first one, but it includes the `--platform` option. The` --platform` option allows you to specify the target platform for the Docker image. In this case, it specifies the platform as `linux/amd64`, which means the image will be built for the AMD64 architecture running Linux. This option is useful when building multi-platform images that can run on different architectures.
+
 The `-t` is for the tag (the name) of the Docker image and the `.` is telling the Docker CLI that the Dockerfile is in the current directory
 
 5. After the Docker image is created, run the following command to confirm the Docker image is on your machine.

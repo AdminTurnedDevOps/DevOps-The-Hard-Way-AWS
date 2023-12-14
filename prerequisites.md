@@ -44,3 +44,10 @@ To build the Docker image, you can use Docker Desktop for Windows or MacOS.
 To store the code that you'll be writing, you can create your very own GitHub account to showcase your project.
 
 [GitHub](https://www.github.com)
+
+### kubectl and kubelogin
+To authenticate and run commands against a Kubernetes cluster.
+
+[Install Tools | Kubernetes](https://kubernetes.io/docs/tasks/tools/)
+[Azure/kubelogin: A Kubernetes credential (exec) plugin implementing azure authentication](https://github.com/Azure/kubelogin)
+[How to switch to Azure kubelogin - Aptakube Blog](https://aptakube.com/blog/how-to-use-azure-kubelogin)

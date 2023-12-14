@@ -11,8 +11,7 @@ The Terraform `main.tf` will do a few things:
 - Use the `azurerm_subnet` Terraform resource to create relevant subnets. 
 - Use the `uksouth` region, but feel free to change that if you'd like
 
-
-2. Create the ACR by running the following:
+2. Create the VNET by running the following:
 - `terraform init` - To initialize the working directory and pull down the provider
 - `terraform plan` - To go through a "check" and confirm the configurations are valid
 - `terraform apply` - To create the resource
