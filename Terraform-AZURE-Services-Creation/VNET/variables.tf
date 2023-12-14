@@ -34,3 +34,7 @@ variable "subnet_address_prefix" {
   type        = string
   description = "Subnet Address Space"
 }
+
+variable "tags" {
+  type = map(string)
+}

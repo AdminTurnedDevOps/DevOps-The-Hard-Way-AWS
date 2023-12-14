@@ -9,3 +9,7 @@ variable "location" {
   default     = "uksouth"
   description = "Azure Location of resources"
 }
+
+variable "tags" {
+  type = map(string)
+}
