@@ -10,14 +10,6 @@ variable "location" {
   description = "Azure Location of resources"
 }
 
-variable "addons" {
-  description = "Defines which addons will be activated."
-  type = object({
-    oms_agent                   = bool
-    ingress_application_gateway = bool
-  })
-}
-
 variable "kubernetes_cluster_rbac_enabled" {
   default = "true"
 }
@@ -35,4 +27,8 @@ variable "ssh_public_key" {
 }
 
 variable "aks_admins_group_object_id" {
+}
+
+variable "tags" {
+  type = map(string)
 }
