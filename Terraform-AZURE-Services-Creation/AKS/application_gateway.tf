@@ -71,6 +71,6 @@ resource "azurerm_application_gateway" "aks" {
     backend_http_settings_name = local.http_setting_name
   }
 
-    tags = var.tags
+  tags = var.tags
 
 }

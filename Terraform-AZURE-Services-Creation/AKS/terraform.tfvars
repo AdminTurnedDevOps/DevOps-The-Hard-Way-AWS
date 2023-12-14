@@ -8,7 +8,7 @@ ssh_public_key             = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDrt/GYkYpuQY
 aks_admins_group_object_id = "e97b6454-3fa1-499e-8e5c-5d631e9ca4d1"
 
 tags = {
-  "DeployedBy" = "Terraform"
+  "DeployedBy"  = "Terraform"
   "Environment" = "production"
-  "Project" = "devopsthehardway"
+  "Project"     = "devopsthehardway"
 }
