@@ -1,7 +1,14 @@
 apiVersion: v1
+kind: Namespace
+metadata:
+  name: uber-ui
+---
+
+apiVersion: v1
 kind: Service
 metadata:
   name: uber-ui
+  namespace: uber-ui
 spec:
   selector:
     app: uber-ui
@@ -16,6 +23,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: uber-ui
+  namespace: uber-ui
 spec:
   selector:
     matchLabels:
@@ -28,24 +36,7 @@ spec:
     spec:
       containers:
       - name: uber-ui
-        image: devopsthehardwayacr.azurecr.io/uberapp:v1
+        image: devopsthehardwaytamopsacr.azurecr.io/uberapp:v1
         ports:
         - containerPort: 5000
 ---
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  name: uber-ui
-  annotations:
-    kubernetes.io/ingress.class: azure/application-gateway
-spec:
-  rules:
-    - http:
-        paths:
-          - path: /
-            pathType: Prefix
-            backend:
-              service:
-                name: uber-ui
-                port:
-                  number: 80

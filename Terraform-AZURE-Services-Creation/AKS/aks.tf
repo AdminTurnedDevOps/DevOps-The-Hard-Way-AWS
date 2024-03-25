@@ -1,25 +1,31 @@
 terraform {
   required_version = ">= 1.5.7"
   backend "azurerm" {
-    resource_group_name  = "devopshardway-rg"
-    storage_account_name = "devopshardwaysa"
-    container_name       = "tfstate"
-    key                  = "aks-terraform.tfstate"
+    # resource_group_name  = "devopshardway-rg"
+    # storage_account_name = "devopshardwaysa"
+    # container_name       = "tfstate"
+    # key                  = "aks-terraform.tfstate"
+    resource_group_name  = "thomasthorntoncloud"
+    storage_account_name = "thomasthorntontfstate"
+    container_name       = "devopsthehardwaygithub"
+    key                  = "terraform.tfstate"
   }
 }
+
 
 provider "azurerm" {
   features {}
 }
 
 resource "azurerm_kubernetes_cluster" "k8s" {
-  name                = "${var.name}aks"
-  location            = var.location
-  resource_group_name = data.azurerm_resource_group.resource_group.name
-  dns_prefix          = "${var.name}dns"
-  kubernetes_version  = var.kubernetes_version
-
-  node_resource_group = "${var.name}-node-rg"
+  name                      = "${var.name}aks"
+  location                  = var.location
+  resource_group_name       = data.azurerm_resource_group.resource_group.name
+  dns_prefix                = "${var.name}dns"
+  kubernetes_version        = var.kubernetes_version
+  oidc_issuer_enabled       = true
+  workload_identity_enabled = true
+  node_resource_group       = "${var.name}-node-rg"
 
   linux_profile {
     admin_username = "ubuntu"
@@ -46,11 +52,6 @@ resource "azurerm_kubernetes_cluster" "k8s" {
     log_analytics_workspace_id = data.azurerm_log_analytics_workspace.workspace.id
   }
 
-
-  ingress_application_gateway {
-    gateway_id = azurerm_application_gateway.aks.id
-  }
-
   network_profile {
     load_balancer_sku = "standard"
     network_plugin    = "azure"
@@ -63,9 +64,5 @@ resource "azurerm_kubernetes_cluster" "k8s" {
   }
 
   tags = var.tags
-
-  depends_on = [
-    azurerm_application_gateway.aks
-  ]
 
 }
