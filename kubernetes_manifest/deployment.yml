@@ -28,6 +28,13 @@ spec:
     spec:
       containers:
       - name: uber-ui
-        image: 912101370089.dkr.ecr.us-east-1.amazonaws.com/devopsthehardway-ecr-repo:latest
+        image: 529088272788.dkr.ecr.us-east-1.amazonaws.com/devopsthehardway-ecr:latest
         ports:
         - containerPort: 5000
+        resources:
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+          requests:
+            memory: "256Mi"
+            cpu: "250m"
