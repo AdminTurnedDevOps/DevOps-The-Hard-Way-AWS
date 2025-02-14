@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket = "terraform-state-devopsthehardway"
+    bucket = "terraform-state-devops-the-hardway-amir-sayed"
     key    = "ecr-terraform.tfstate"
     region = "us-east-1"
   }
@@ -15,7 +15,7 @@ provider "aws" {
   region = "us-east-1"
 }
 
-resource "aws_ecr_repository" "devopsthehardway-ecr-repo" {
+resource "aws_ecr_repository" "devops-the-hardway-ecr-repo-amir" {
   name                 = var.repo_name
   image_tag_mutability = "MUTABLE"
 

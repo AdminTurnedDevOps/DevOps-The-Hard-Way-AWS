@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket = "terraform-state-devopsthehardway"
+    bucket = "terraform-state-devops-the-hardway-amir-sayed"
     key    = "eks-terraform-workernodes.tfstate"
     region = "us-east-1"
   }
@@ -14,7 +14,7 @@ terraform {
 
 # IAM Role for EKS to have access to the appropriate resources
 resource "aws_iam_role" "eks-iam-role" {
-  name = "devopsthehardway-eks-iam-role"
+  name = "devops-the-hardway-eks-iam-role"
 
   path = "/"
 
@@ -46,8 +46,8 @@ resource "aws_iam_role_policy_attachment" "AmazonEC2ContainerRegistryReadOnly-EK
 }
 
 ## Create the EKS cluster
-resource "aws_eks_cluster" "devopsthehardway-eks" {
-  name = "devopsthehardway-cluster"
+resource "aws_eks_cluster" "devops-the-hardway-eks" {
+  name = "devops-the-hardway-eks-cluster-01"
   role_arn = aws_iam_role.eks-iam-role.arn
 
   vpc_config {
@@ -60,8 +60,8 @@ resource "aws_eks_cluster" "devopsthehardway-eks" {
 }
 
 ## Worker Nodes
-resource "aws_iam_role" "workernodes" {
-  name = "eks-node-group-example"
+resource "aws_iam_role" "worker-nodes-01" {
+  name = "eks-node-group-01"
 
   assume_role_policy = jsonencode({
     Statement = [{
@@ -77,28 +77,28 @@ resource "aws_iam_role" "workernodes" {
 
 resource "aws_iam_role_policy_attachment" "AmazonEKSWorkerNodePolicy" {
   policy_arn = "arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy"
-  role       = aws_iam_role.workernodes.name
+  role       = aws_iam_role.worker-nodes-01.name
 }
 
 resource "aws_iam_role_policy_attachment" "AmazonEKS_CNI_Policy" {
   policy_arn = "arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"
-  role       = aws_iam_role.workernodes.name
+  role       = aws_iam_role.worker-nodes-01.name
 }
 
 resource "aws_iam_role_policy_attachment" "EC2InstanceProfileForImageBuilderECRContainerBuilds" {
   policy_arn = "arn:aws:iam::aws:policy/EC2InstanceProfileForImageBuilderECRContainerBuilds"
-  role       = aws_iam_role.workernodes.name
+  role       = aws_iam_role.worker-nodes-01.name
 }
 
 resource "aws_iam_role_policy_attachment" "AmazonEC2ContainerRegistryReadOnly" {
   policy_arn = "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly"
-  role       = aws_iam_role.workernodes.name
+  role       = aws_iam_role.worker-nodes-01.name
 }
 
 resource "aws_eks_node_group" "worker-node-group" {
-  cluster_name    = aws_eks_cluster.devopsthehardway-eks.name
-  node_group_name = "devopsthehardway-workernodes"
-  node_role_arn   = aws_iam_role.workernodes.arn
+  cluster_name    = aws_eks_cluster.devops-the-hardway-eks.name
+  node_group_name = "devops-the-hardway-worker-nodes-01"
+  node_role_arn   = aws_iam_role.worker-nodes-01.arn
   subnet_ids      = [var.subnet_id_1, var.subnet_id_2]
   instance_types = ["t3.xlarge"]
 

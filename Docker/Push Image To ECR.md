@@ -7,6 +7,8 @@ The ECR repository will be where you store the Docker image that you created on 
 2. Log in to ECR with AWS CLI
 `aws ecr get-login-password --region *your_aws_region* | docker login --username AWS --password-stdin *your_aws_account_id*.dkr.ecr.*your_aws_region*.amazonaws.com`
 
+aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 529088272788.dkr.ecr.us-east-1.amazonaws.com
+
 ## Tag The Docker Image
 1. Tag the Docker image
 `docker tag uber *your_aws_account_id*.dkr.ecr.*your_aws_region*.amazonaws.com`
