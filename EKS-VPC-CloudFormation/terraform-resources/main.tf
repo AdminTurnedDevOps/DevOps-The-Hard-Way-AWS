@@ -1,3 +1,16 @@
+terraform  {
+  backend "s3" {
+    bucket = "terraform-state-devops-the-hardway-amir-sayed"
+    key    = "vpc-terraform.tfstate"
+    region = "us-east-1"
+  }
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+    }
+  }
+}
+
 provider "aws" {
   region = var.region
 }
@@ -60,36 +73,36 @@ resource "aws_eip" "main02" {
 }
 
 
-# resource "aws_nat_gateway" "main01" {
+resource "aws_nat_gateway" "main01" {
   
-#   allocation_id = aws_eip.main01.id
-#   subnet_id     = aws_subnet.public01.id
+  allocation_id = aws_eip.main01.id
+  subnet_id     = aws_subnet.public01.id
 
-#   tags = {
-#     Name = "${var.stack_name}-NatGatewayAZ1"
-#   }
-# }
+  tags = {
+    Name = "${var.stack_name}-NatGatewayAZ1"
+  }
+}
 
-# resource "aws_nat_gateway" "main02" {
-#   allocation_id = aws_eip.main02.id
-#   subnet_id     = aws_subnet.public02.id
+resource "aws_nat_gateway" "main02" {
+  allocation_id = aws_eip.main02.id
+  subnet_id     = aws_subnet.public02.id
 
-#   tags = {
-#     Name = "${var.stack_name}-NatGatewayAZ2"
-#   }
-# }
+  tags = {
+    Name = "${var.stack_name}-NatGatewayAZ2"
+  }
+}
 
-# resource "aws_route" "private01" {
-#   route_table_id         = aws_route_table.private01.id
-#   destination_cidr_block = "0.0.0.0/0"
-#   nat_gateway_id         = aws_nat_gateway.main01.id
-# }
+resource "aws_route" "private01" {
+  route_table_id         = aws_route_table.private01.id
+  destination_cidr_block = "0.0.0.0/0"
+  nat_gateway_id         = aws_nat_gateway.main01.id
+}
 
-# resource "aws_route" "private02" {
-#   route_table_id         = aws_route_table.private02.id
-#   destination_cidr_block = "0.0.0.0/0"
-#   nat_gateway_id         = aws_nat_gateway.main02.id
-# }
+resource "aws_route" "private02" {
+  route_table_id         = aws_route_table.private02.id
+  destination_cidr_block = "0.0.0.0/0"
+  nat_gateway_id         = aws_nat_gateway.main02.id
+}
 
 resource "aws_subnet" "public01" {
   vpc_id            = aws_vpc.main.id
