@@ -49,3 +49,9 @@ variable "env" {
   description = "Environment (e.g., dev, prod)"
   type        = string
 }
+
+variable "state_bucket" {
+  description = "S3 bucket for Terraform state"
+  type        = string
+  
+}
