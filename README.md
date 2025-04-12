@@ -43,6 +43,8 @@ You will be using the following technologies and platforms to set up a DevOps en
    - Use GitHub Actions to create an EKS cluster
 8. Automated testing
     - Testing Terraform code with Checkov
+9. Monitoring and Observability
+    - Logs, traces, metrics, and monitoring for the EKS cluster and the containerized apps.
 
 ## Labs
 1. [Prerequisites](https://github.com/AdminTurnedDevOps/DevOps-The-Hard-Way-AWS/blob/main/prerequisites.md)
@@ -62,3 +64,5 @@ You will be using the following technologies and platforms to set up a DevOps en
     - [Install And Run Checkov](https://github.com/AdminTurnedDevOps/DevOps-The-Hard-Way-AWS/blob/main/Terraform-Static-Code-Analysis/1-Checkov-For-Terraform.md)
 8. CICD - The purpose of this section is to automatically create an EKS cluster with CICD using GitHub Actions
     - [Create a GitHub Actions CICD pipeline](https://github.com/AdminTurnedDevOps/DevOps-The-Hard-Way-AWS/blob/main/Terraform-AWS-Services-Creation/4-Run-CICD-For-EKS-Cluster.md)
+9. Monitoring and Observability
+    - [Configure Monitoring and Observability in Datadog](https://github.com/AdminTurnedDevOps/DevOps-The-Hard-Way-AWS/blob/main/Terraform-AWS-Services-Creation/4-Run-CICD-For-EKS-Cluster.md)
