@@ -1,4 +1,4 @@
-cluster_name = "eksdev"
+cluster_name = "eks"
 kubernetes_version = "1.32"
 desired_size = 2
 max_size = 3
