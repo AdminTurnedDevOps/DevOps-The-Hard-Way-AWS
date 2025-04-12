@@ -12,6 +12,7 @@ The Terraform `main.tf` will do a few things:
 - Utilize AES256 encryption 
 
 2. Create the bucket by running the following:
+- `cd terraform-state-s3-bucket`
 - `terraform init` - To initialize the working directory and pull down the provider
 - `terraform plan --var-file=../eks-vpc-terraform-module/dev.tfvars` - To go through a "check" and confirm the configurations are valid. You will need to change the `tfvars` file between dev and prod
 - `terraform apply --var-file=../eks-vpc-terraform-module/dev.tfvars' - To create the resource. You will need to change the `tfvars` file between dev and prod
