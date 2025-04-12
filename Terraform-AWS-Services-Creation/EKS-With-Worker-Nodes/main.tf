@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
     bucket = "terraform-state-devopsthehardway"
-    key    = "eks-terraform-workernodes.tfstate"
+    key    = "eks-terraform-test.tfstate"
     region = "us-east-1"
   }
   required_providers {
@@ -47,7 +47,7 @@ resource "aws_iam_role_policy_attachment" "AmazonEC2ContainerRegistryReadOnly-EK
 
 ## Create the EKS cluster
 resource "aws_eks_cluster" "devopsthehardway-eks" {
-  name = "devopsthehardway-cluster"
+  name = var.name
   role_arn = aws_iam_role.eks-iam-role.arn
 
   vpc_config {
