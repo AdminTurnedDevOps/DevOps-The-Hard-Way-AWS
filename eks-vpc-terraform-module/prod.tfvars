@@ -6,3 +6,4 @@ min_size = 3
 instance_types = ["c5.xlarge"]
 env = "prod"
 state_bucket = "tfstate-prod-devopsthehardway"
+aws_region = "us-east-2"
