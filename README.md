@@ -49,7 +49,7 @@ You will be using the following technologies and platforms to set up a DevOps en
 2. AWS:
     - [Configure credentials to access AWS at a programmatic level](https://github.com/AdminTurnedDevOps/DevOps-The-Hard-Way-AWS/blob/main/AWS/1-Configure-Credentials-To-Access-AWS.md)
 3. Terraform - The purpose of the Terraform section is to create all of the AWS cloud services you'll need from an environment/infrastructure perspective to run the Uber application.
-    - [Create S3 Bucket To Store TFSTATE Files](https://github.com/AdminTurnedDevOps/DevOps-The-Hard-Way-AWS/blob/main/terraform-state-s3-bucket/Create-S3-Bucket-To-Store-TFSTATE-Files.mdd)
+    - [Create S3 Bucket To Store TFSTATE Files](https://github.com/AdminTurnedDevOps/DevOps-The-Hard-Way-AWS/blob/main/terraform-state-s3-bucket/Create-S3-Bucket-To-Store-TFSTATE-Files.md)
     - [Create an Elastic Container Registry](https://github.com/AdminTurnedDevOps/DevOps-The-Hard-Way-AWS/blob/main/Terraform-AWS-Services-Creation/2-Create-ECR.md)
     - [Create An EKS Cluster and VPC](https://github.com/AdminTurnedDevOps/DevOps-The-Hard-Way-AWS/blob/main/eks-vpc-terraform-module/Module-creation.md)
 5. Docker - The purpose of the Docker section is to create a Docker image from the app that the organization is running on-prem (the uber app), containerize it, and store the container inside of a container repository. For the container repo, you'll use AWS ECR.
