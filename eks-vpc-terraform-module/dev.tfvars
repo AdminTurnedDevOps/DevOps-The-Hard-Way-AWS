@@ -5,4 +5,4 @@ max_size = 3
 min_size = 1
 instance_types = ["t3.medium"]
 env = "dev"
-state_bucket = "tfstate-dev"
+state_bucket = "tfstate-dev-devopsthehardway"

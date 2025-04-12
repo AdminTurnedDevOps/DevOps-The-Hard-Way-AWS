@@ -5,4 +5,4 @@ max_size = 4
 min_size = 3
 instance_types = ["c5.xlarge"]
 env = "prod"
-state_bucket = "tfstate-dev"
+state_bucket = "tfstate-prod-devopsthehardway"

@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "terraform_state" {
-  bucket = "terraform-state-devopsthehardway"
+  bucket = var.state_bucket
   versioning {
     enabled = true
   }
