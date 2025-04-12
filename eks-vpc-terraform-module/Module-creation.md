@@ -34,3 +34,8 @@ eks-vpc-terraform-module/
      - dev.tfvars
      - prod.tfvars
    Please ensure to pass in appropriate values for your environment
+
+3. To run the configuration:
+- `terraform init` - To initialize the working directory and pull down the provider
+- `terraform plan --var-file=dev.tfvars` - To go through a "check" and confirm the configurations are valid. You will need to change the `tfvars` file between dev and prod
+- `terraform apply --var-file=dev.tfvars' - To create the resource. You will need to change the `tfvars` file between dev and prod
