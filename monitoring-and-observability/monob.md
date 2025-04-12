@@ -6,6 +6,14 @@ In this lab, you'll configure monitoring and observability for your EKS cluster 
 
 ## Setting Up A Datadog Account
 
+1. Go to https://www.datadoghq.com/
+
+2. Click the **GET STARTED FREE** button.
+![](images/1.png)
+
+3. Sign up using Google. You should be able to sign up using your personal Gmail account.
+![](images/2.png)
+
 
 ## Creating A Datadog API Key
 
